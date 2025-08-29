@@ -27,6 +27,10 @@ alert(`
 
  let dinheiro = prompt("Qual moeda você quer transformar? \n (Coloque apenas o numero) \n 1.REAL \n 2.DOLAR AMERICANO \n 3.EURO \n 4.LIBRA ESTERLINA \n 5.IENE JAPÔNES \n 6.DÓLAR AUSTRALIANO \n 7.FRANCO SUIÇO \n 8.DÓLAR CANADENSE \n 9.PESO ARGENTINO").toLowerCase()
 
+ if(dinheiro != "1" && dinheiro != "2" && dinheiro != "3" && dinheiro != "4" && dinheiro != "5" && dinheiro != "6" && dinheiro != "7" && dinheiro != "8" && dinheiro != "9"){
+    alert("Você inseriu uma moeda invalida")
+ }
+
  let taxa = parseFloat(undefined)
  
  if (dinheiro === "1"){
