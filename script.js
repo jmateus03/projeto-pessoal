@@ -15,7 +15,7 @@ if(equipes === "3" || equipes === "3 equipes"){
             let vencedor1 = prompt("Quem foi o vencedor da primeira partida?").toUpperCase()
 
             if (vencedor1 === equipe1) {
-                alert(`A segunda partida é: ${equipe1} X ${equipe3}`)
+                alert(`A final será: ${equipe1} X ${equipe3}`)
                 let vencedor2 = prompt("Quem foi o vencedor da segunda partida?").toUpperCase()
 
                 if (vencedor2 === equipe1 || vencedor2 === equipe3) {
@@ -25,7 +25,7 @@ if(equipes === "3" || equipes === "3 equipes"){
                 }
 
             } else if (vencedor1 === equipe2) {
-                alert(`A segunda partida é: ${equipe2} X ${equipe3}`)
+                alert(`A final será: ${equipe2} X ${equipe3}`)
                 let vencedor2 = prompt("Quem foi o vencedor da segunda partida?").toUpperCase()
 
                 if (vencedor2 === equipe2 || vencedor2 === equipe3) {
