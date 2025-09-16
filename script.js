@@ -1,63 +1,67 @@
+
 let equipes = prompt(
   "Digite o número de equipes que vão participar do campeonato (entre 3 e 12):\n\n" +
   "Exemplos:\n3 equipes   |   8 equipes\n4 equipes   |   9 equipes\n5 equipes   |  10 equipes\n6 equipes   |  11 equipes\n7 equipes   |  12 equipes"
 ).toLowerCase()
-
 if (equipes === "3" || equipes === "3 equipes") {
 
-  let equipe1 = prompt("Digite o nome da PRIMEIRA equipe:").toUpperCase()
-  let equipe2 = prompt("Digite o nome da SEGUNDA equipe:").toUpperCase()
-  let equipe3 = prompt("Digite o nome da TERCEIRA equipe:").toUpperCase()
 
-  let posicao = Math.floor(Math.random() * 3) + 1
+  let equipe1Chave3 = prompt("Digite o nome da PRIMEIRA equipe:").toUpperCase()
+  let equipe2Chave3 = prompt("Digite o nome da SEGUNDA equipe:").toUpperCase()
+  let equipe3Chave3 = prompt("Digite o nome da TERCEIRA equipe:").toUpperCase()
+
+  let chave = Math.floor(Math.random() * 3) + 1
+
   alert(`Sorteio realizado! Vamos ver quem joga a primeira partida...`)
 
-  if (posicao === 1) {
-    alert(`Partida 1: ${equipe1} vs ${equipe2}`)
-    let vencedor1 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+  if (chave === 1) {
+    alert(`Partida 1: ${equipe1Chave3} vs ${equipe2Chave3}`)
+    let vencedor1Chave3 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
 
-    if (vencedor1 !== equipe1 && vencedor1 !== equipe2) {
+    if (vencedor1Chave3 !== equipe1Chave3 && vencedor1Chave3 !== equipe2Chave3) {
       alert("❌ Nome inválido! Essa equipe não participou da partida.")
     } else {
-      alert(`Grande final: ${vencedor1} vs ${equipe3}`)
-      let vencedor2 = prompt("Digite o nome do vencedor da final:").toUpperCase()
+      alert(`Grande final: ${vencedor1Chave3} vs ${equipe3Chave3}`)
+      
+      let vencedor2Chave3 = prompt("Digite o nome do vencedor da final:").toUpperCase()
 
-      if (vencedor2 === vencedor1 || vencedor2 === equipe3) {
-        alert(`🏆 Parabéns, ${vencedor2}! Vocês são os campeões do torneio!`)
+      if (vencedor2Chave3 === vencedor1Chave3 || vencedor2Chave3 === equipe3Chave3) {
+        alert(`🏆 Parabéns, ${vencedor2Chave3}! Vocês são os campeões do torneio!`)
       } else {
         alert("❌ Nome inválido! Essa equipe não participou da final.")
       }
     }
 
-  } else if (posicao === 2) {
-    alert(`Partida 1: ${equipe2} vs ${equipe3}`)
-    let vencedor1 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+  } else if ( chave === 2) {
+    alert(`Partida 1: ${equipe2Chave3} vs ${equipe3Chave3}`)
+    
+    let vencedor1Chave3 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
 
-    if (vencedor1 !== equipe2 && vencedor1 !== equipe3) {
+    if (vencedor1Chave3 !== equipe2Chave3 && vencedor1Chave3 !== equipe3Chave3) {
       alert("❌ Nome inválido! Essa equipe não participou da partida.")
     } else {
-      alert(`Grande final: ${vencedor1} vs ${equipe1}`)
-      let vencedor2 = prompt("Digite o nome do vencedor da final:").toUpperCase()
+      alert(`Grande final: ${vencedor1Chave3} vs ${equipe1Chave3}`)
+      let vencedor2Chave3 = prompt("Digite o nome do vencedor da final:").toUpperCase()
 
-      if (vencedor2 === vencedor1 || vencedor2 === equipe1) {
-        alert(`🏆 Parabéns, ${vencedor2}! Vocês são os campeões do torneio!`)
+      if (vencedor2Chave3 === vencedor1Chave3 || vencedor2Chave3 === equipe1Chave3) {
+        alert(`🏆 Parabéns, ${vencedor2Chave3}! Vocês são os campeões do torneio!`)
       } else {
         alert("❌ Nome inválido! Essa equipe não participou da final.")
       }
     }
 
-  } else if (posicao === 3) {
-    alert(`Partida 1: ${equipe1} vs ${equipe3}`)
-    let vencedor1 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+  } else if (chave === 3) {
+    alert(`Partida 1: ${equipe1Chave3} vs ${equipe3Chave3}`)
+    let vencedor1Chave3 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
 
-    if (vencedor1 !== equipe1 && vencedor1 !== equipe3) {
+    if (vencedor1Chave3 !== equipe1Chave3 && vencedor1Chave3 !== equipe3Chave3) {
       alert("❌ Nome inválido! Essa equipe não participou da partida.")
     } else {
-      alert(`Grande final: ${vencedor1} vs ${equipe2}`)
-      let vencedor2 = prompt("Digite o nome do vencedor da final:").toUpperCase()
+      alert(`Grande final: ${vencedor1Chave3} vs ${equipe2Chave3}`)
+      let vencedor2Chave3 = prompt("Digite o nome do vencedor da final:").toUpperCase()
 
-      if (vencedor2 === vencedor1 || vencedor2 === equipe2) {
-        alert(`🏆 Parabéns, ${vencedor2}! Vocês são os campeões do torneio!`)
+      if (vencedor2Chave3 === vencedor1Chave3 || vencedor2Chave3 === equipe2Chave3) {
+        alert(`🏆 Parabéns, ${vencedor2Chave3}! Vocês são os campeões do torneio!`)
       } else {
         alert("❌ Nome inválido! Essa equipe não participou da final.")
       }
@@ -65,93 +69,101 @@ if (equipes === "3" || equipes === "3 equipes") {
   }
 
 }else if(equipes === "4" || equipes === "4 equipes"){
-     let equipe1 = prompt("Digite o nome da PRIMEIRA equipe:").toUpperCase() 
-     let equipe2 = prompt("Digite o nome da SEGUNDA equipe:").toUpperCase() 
-     let equipe3 = prompt("Digite o nome da TERCEIRA equipe:").toUpperCase() 
-     let equipe4 = prompt("Digite o nome da QUARTA equipe:").toUpperCase() 
+     let equipe1Chave4= prompt("Digite o nome da PRIMEIRA equipe:").toUpperCase() 
+     let equipe2Chave4= prompt("Digite o nome da SEGUNDA equipe:").toUpperCase() 
+     let equipe3Chave4= prompt("Digite o nome da TERCEIRA equipe:").toUpperCase() 
+     let equipe4Chave4 = prompt("Digite o nome da QUARTA equipe:").toUpperCase() 
      
-     let posicao = Math.floor(Math.random() * 4) + 1
+     let chave = Math.floor(Math.random() * 4) + 1
 
     alert("Sorteio realizado! Vamos ver quem joga a primeira partida...")
 
-    if(posicao === 1){ 
-        alert(`Partida 1: ${equipe1} vs ${equipe2}`)
+    if(chave === 1){ 
 
-    let vencedor1 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
-     if(vencedor1 === equipe1 || vencedor1 === equipe2){ 
-        alert(`Partida 2: ${equipe3} vs ${equipe4}`) 
+        alert(" CHAVEAMENTO \n partida 1: " + equipe1Chave4 + " vs " + equipe2Chave4 + "\n partida 2: " + equipe3Chave4 + " vs " + equipe4Chave4)
+        alert(`Partida 1: ${equipe1Chave4} vs ${equipe2Chave4}`)
+
+    let vencedor1Chave4 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+     if(vencedor1Chave4 === equipe1Chave4 || vencedor1Chave4 === equipe2Chave4){ 
+        alert(`Partida 2: ${equipe3Chave4} vs ${equipe4Chave4}`) 
         
-        let vencedor2 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+        let vencedor2Chave4 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
         
-        if(vencedor2 === equipe3 || vencedor2 === equipe4){ 
-            alert(`Grande final: ${vencedor1} vs ${vencedor2}`) 
+        if(vencedor2Chave4 === equipe3Chave4 || vencedor2Chave4 === equipe4Chave4){ 
+            alert(`Grande final: ${vencedor1Chave4} vs ${vencedor2Chave4}`) 
             
-            let vencedorFinal = prompt("Digite o nome do vencedor da final:").toUpperCase() 
+            let vencedorFinalChave4 = prompt("Digite o nome do vencedor da final:").toUpperCase()
+             
+            if(vencedorFinalChave4 == vencedor1Chave4 || vencedorFinalChave4 == vencedor2Chave4){
+              alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`)
+            }else{
+              alert("❌ Nome inválido! Essa equipe não participou da final.")
+            }
+        }else{
+             alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+        } 
+    }else{
+         alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+        } 
+    }else if(chave === 2){
+           alert(" CHAVEAMENTO \n partida 1: " + equipe1Chave4 + " vs " + equipe3Chave4 + "\n partida 2: " + equipe2Chave4 + " vs " + equipe4Chave4)
+             alert(`Partida 1: ${equipe1Chave4} vs ${equipe3Chave4}`)
+
+    let vencedor1Chave4 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+     if(vencedor1Chave4 === equipe1Chave4 || vencedor1Chave4 === equipe3Chave4){ 
+        alert(`Partida 2: ${equipe2Chave4} vs ${equipe4Chave4}`) 
+        
+        let vencedor2Chave4 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+        
+        if(vencedor2Chave4 === equipe2Chave4 || vencedor2Chave4 === equipe4Chave4){ 
+            alert(`Grande final: ${vencedor1Chave4} vs ${vencedor2Chave4}`) 
             
-            alert(`🏆 Parabéns, ${vencedorFinal}! Vocês são os campeões do torneio!`) 
+            let vencedorFinalChave4 = prompt("Digite o nome do vencedor da final:").toUpperCase() 
+            
+            alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`) 
+        }else{
+             alert("❌ Nome inválido! Essa equipe não participou da final.") 
+        } 
+    }else{
+         alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+        }
+    }else if(chave === 3){
+           alert(" CHAVEAMENTO \n partida 1: " + equipe1Chave4 + " vs " + equipe4Chave4 + "\n partida 2: " + equipe2Chave4 + " vs " + equipe3Chave4)
+             alert(`Partida 1: ${equipe1Chave4} vs ${equipe4Chave4}`)
+
+    let vencedor1Chave4 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+     if(vencedor1Chave4 === equipe1Chave4 || vencedor1Chave4 === equipe4Chave4){ 
+        alert(`Partida 2: ${equipe2Chave4} vs ${equipe3Chave4}`) 
+        
+        let vencedor2Chave4 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+        
+        if(vencedor2Chave4 === equipe2Chave4 || vencedor2Chave4 === equipe3Chave4){ 
+            alert(`Grande final: ${vencedor1Chave4} vs ${vencedor2Chave4}`) 
+            let vencedorFinalChave4 = prompt("Digite o nome do vencedor da final:").toUpperCase() 
+            
+            alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`) 
         }else{
              alert("❌ Nome inválido! Essa equipe não participou da final.") 
         } 
     }else{
          alert("❌ Nome inválido! Essa equipe não participou da partida.") 
         } 
-    }else if(posicao === 2){
-             alert(`Partida 1: ${equipe1} vs ${equipe3}`)
+    }else if(chave === 4){
+           alert(" CHAVEAMENTO \n partida 1: " + equipe3Chave4 + " vs " + equipe4Chave4 + "\n partida 2: " + equipe1Chave4 + " vs " + equipe2Chave4)
+             alert(`Partida 1: ${equipe3Chave4} vs ${equipe4Chave4}`)
 
-    let vencedor1 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
-     if(vencedor1 === equipe1 || vencedor1 === equipe3){ 
-        alert(`Partida 2: ${equipe2} vs ${equipe4}`) 
+    let vencedor1Chave4 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+     if(vencedor1Chave4 === equipe3Chave4 || vencedor1Chave4 === equipe4Chave4){ 
+        alert(`Partida 2: ${equipe1Chave4} vs ${equipe2Chave4}`) 
         
-        let vencedor2 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+        let vencedor2Chave4 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
         
-        if(vencedor2 === equipe2 || vencedor2 === equipe4){ 
-            alert(`Grande final: ${vencedor1} vs ${vencedor2}`) 
+        if(vencedor2Chave4 === equipe1Chave4 || vencedor2Chave4 === equipe2Chave4){ 
+            alert(`Grande final: ${vencedor1Chave4} vs ${vencedor2Chave4}`) 
             
-            let vencedorFinal = prompt("Digite o nome do vencedor da final:").toUpperCase() 
+            let vencedorFinalChave4 = prompt("Digite o nome do vencedor da final:").toUpperCase() 
             
-            alert(`🏆 Parabéns, ${vencedorFinal}! Vocês são os campeões do torneio!`) 
-        }else{
-             alert("❌ Nome inválido! Essa equipe não participou da final.") 
-        } 
-    }else{
-         alert("❌ Nome inválido! Essa equipe não participou da partida.") 
-        } 
-    }else if(posicao === 3){
-             alert(`Partida 1: ${equipe1} vs ${equipe4}`)
-
-    let vencedor1 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
-     if(vencedor1 === equipe1 || vencedor1 === equipe4){ 
-        alert(`Partida 2: ${equipe2} vs ${equipe3}`) 
-        
-        let vencedor2 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
-        
-        if(vencedor2 === equipe2 || vencedor2 === equipe3){ 
-            alert(`Grande final: ${vencedor1} vs ${vencedor2}`) 
-            
-            let vencedorFinal = prompt("Digite o nome do vencedor da final:").toUpperCase() 
-            
-            alert(`🏆 Parabéns, ${vencedorFinal}! Vocês são os campeões do torneio!`) 
-        }else{
-             alert("❌ Nome inválido! Essa equipe não participou da final.") 
-        } 
-    }else{
-         alert("❌ Nome inválido! Essa equipe não participou da partida.") 
-        } 
-    }else if(posicao === 4){
-             alert(`Partida 1: ${equipe3} vs ${equipe4}`)
-
-    let vencedor1 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
-     if(vencedor1 === equipe3 || vencedor1 === equipe4){ 
-        alert(`Partida 2: ${equipe1} vs ${equipe2}`) 
-        
-        let vencedor2 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
-        
-        if(vencedor2 === equipe1 || vencedor2 === equipe2){ 
-            alert(`Grande final: ${vencedor1} vs ${vencedor2}`) 
-            
-            let vencedorFinal = prompt("Digite o nome do vencedor da final:").toUpperCase() 
-            
-            alert(`🏆 Parabéns, ${vencedorFinal}! Vocês são os campeões do torneio!`) 
+            alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`) 
         }else{
              alert("❌ Nome inválido! Essa equipe não participou da final.") 
         } 
@@ -160,41 +172,41 @@ if (equipes === "3" || equipes === "3 equipes") {
         } 
     }
 }else if(equipes === "5" || equipes === "5 equipes"){
-    let equipe1 = prompt("Digite o nome da PRIMEIRA equipe:").toUpperCase() 
-    let equipe2 = prompt("Digite o nome da SEGUNDA equipe:").toUpperCase() 
-    let equipe3 = prompt("Digite o nome da TERCEIRA equipe:").toUpperCase() 
-    let equipe4 = prompt("Digite o nome da QUARTA equipe:").toUpperCase() 
-    let equipe5 = prompt("Digite o nome da QUINTA equipe:").toUpperCase()  
+    let equipe1Chave5 = prompt("Digite o nome da PRIMEIRA equipe:").toUpperCase() 
+    let equipe2Chave5 = prompt("Digite o nome da SEGUNDA equipe:").toUpperCase() 
+    let equipe3Chave5 = prompt("Digite o nome da TERCEIRA equipe:").toUpperCase() 
+    let equipe4Chave5 = prompt("Digite o nome da QUARTA equipe:").toUpperCase() 
+    let equipe5Chave5 = prompt("Digite o nome da QUINTA equipe:").toUpperCase()  
 
-    let posicao = 1
+    let chave= 1
 
      alert("Sorteio realizado! Vamos ver quem joga a primeira partida...")
 
-     if (posicao === 1){
-        alert(`Partida 1: ${equipe1} vs ${equipe2}`)
+     if (chave === 1){
+        alert(`Partida 1: ${equipe1Chave5} vs ${equipe2Chave5}`)
 
-        let vencedor1 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+        let vencedor1Chave5 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
 
-     if(vencedor1 != equipe1 && vencedor1 != equipe2){
+     if(vencedor1Chave5 != equipe1Chave5 && vencedor1Chave5 != equipe2Chave5){
         alert("❌ Nome inválido! Essa equipe não participou da partida.") 
         }else{
-            alert(`Partida 2: ${equipe3} vs ${equipe4}`)
+            alert(`Partida 2: ${equipe3Chave5} vs ${equipe4Chave5}`)
 
-            let vencedor2 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+            let vencedor2Chave5 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
 
-            if(vencedor2 === equipe3 || vencedor2 === equipe4){
-                alert(`Semi final: ${vencedor1} vs ${equipe5}`)
+            if(vencedor2Chave5 === equipe3Chave5 || vencedor2Chave5 === equipe4Chave5){
+                alert(`Semi final: ${vencedor1Chave5} vs ${equipe5Chave5}`)
 
-                let vencedorSemi = prompt("Digite o nome do vencedor da semi final:").toUpperCase()
+                let vencedorSemiChave5 = prompt("Digite o nome do vencedor da semi final:").toUpperCase()
 
-                if(vencedorSemi === vencedor1 || vencedorSemi === equipe5){
-                    alert(`Grande final: ${vencedorSemi} vs ${vencedor2}`)
+                if(vencedorSemiChave5 === vencedor1Chave5 || vencedorSemiChave5 === equipe5Chave5){
+                    alert(`Grande final: ${vencedorSemiChave5} vs ${vencedor2Chave5}`)
 
-                    let vencedorFinal = prompt("Digite o nome do vencedor da final:").toUpperCase()
+                    let vencedorFinalChave5 = prompt("Digite o nome do vencedor da final:").toUpperCase()
                     
-                    alert(`🏆 Parabéns, ${vencedorFinal}! Vocês são os campeões do torneio!`) 
+                    alert(`🏆 Parabéns, ${vencedorFinalChave5}! Vocês são os campeões do torneio!`) 
 
-                }else if (vencedorFinal != vencedorSemi && vencedorFinal != equipe5){
+                }else if (vencedorFinalChave5 != vencedorSemiChave5 && vencedorFinalChave5 != equipe5Chave5){
                   alert("❌ Nome inválido! Essa equipe não participou da final.") 
                 }else{
                     alert("❌ Nome inválido! Essa equipe não participou da partida.") 
