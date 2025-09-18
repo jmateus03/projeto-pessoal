@@ -120,13 +120,17 @@ if (equipes === "3" || equipes === "3 equipes") {
             
             let vencedorFinalChave4 = prompt("Digite o nome do vencedor da final:").toUpperCase() 
             
-            alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`) 
+            if(vencedorFinalChave4 == vencedor1Chave4 || vencedorFinalChave4 == vencedor2Chave4){
+              alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`)
+            }else{
+              alert("❌ Nome inválido! Essa equipe não participou da final.")
+            }
         }else{
-             alert("❌ Nome inválido! Essa equipe não participou da final.") 
+             alert("❌ Nome inválido! Essa equipe não participou da partida.") 
         } 
     }else{
          alert("❌ Nome inválido! Essa equipe não participou da partida.") 
-        }
+        } 
     }else if(chave === 3){
            alert(" CHAVEAMENTO \n partida 1: " + equipe1Chave4 + " vs " + equipe4Chave4 + "\n partida 2: " + equipe2Chave4 + " vs " + equipe3Chave4)
              alert(`Partida 1: ${equipe1Chave4} vs ${equipe4Chave4}`)
@@ -139,11 +143,16 @@ if (equipes === "3" || equipes === "3 equipes") {
         
         if(vencedor2Chave4 === equipe2Chave4 || vencedor2Chave4 === equipe3Chave4){ 
             alert(`Grande final: ${vencedor1Chave4} vs ${vencedor2Chave4}`) 
+
             let vencedorFinalChave4 = prompt("Digite o nome do vencedor da final:").toUpperCase() 
             
-            alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`) 
+                    if(vencedorFinalChave4 == vencedor1Chave4 || vencedorFinalChave4 == vencedor2Chave4){
+              alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`)
+            }else{
+              alert("❌ Nome inválido! Essa equipe não participou da final.")
+            }
         }else{
-             alert("❌ Nome inválido! Essa equipe não participou da final.") 
+             alert("❌ Nome inválido! Essa equipe não participou da partida.") 
         } 
     }else{
          alert("❌ Nome inválido! Essa equipe não participou da partida.") 
@@ -161,11 +170,15 @@ if (equipes === "3" || equipes === "3 equipes") {
         if(vencedor2Chave4 === equipe1Chave4 || vencedor2Chave4 === equipe2Chave4){ 
             alert(`Grande final: ${vencedor1Chave4} vs ${vencedor2Chave4}`) 
             
-            let vencedorFinalChave4 = prompt("Digite o nome do vencedor da final:").toUpperCase() 
-            
-            alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`) 
+                        let vencedorFinalChave4 = prompt("Digite o nome do vencedor da final:").toUpperCase() 
+               if(vencedorFinalChave4 == vencedor1Chave4 || vencedorFinalChave4 == vencedor2Chave4){
+              alert(`🏆 Parabéns, ${vencedorFinalChave4}! Vocês são os campeões do torneio!`)
+              
+            }else{
+              alert("❌ Nome inválido! Essa equipe não participou da final.")
+            }
         }else{
-             alert("❌ Nome inválido! Essa equipe não participou da final.") 
+             alert("❌ Nome inválido! Essa equipe não participou da partida.") 
         } 
     }else{
          alert("❌ Nome inválido! Essa equipe não participou da partida.") 
@@ -178,11 +191,12 @@ if (equipes === "3" || equipes === "3 equipes") {
     let equipe4Chave5 = prompt("Digite o nome da QUARTA equipe:").toUpperCase() 
     let equipe5Chave5 = prompt("Digite o nome da QUINTA equipe:").toUpperCase()  
 
-    let chave= 1
+    let chave= 2
 
      alert("Sorteio realizado! Vamos ver quem joga a primeira partida...")
 
      if (chave === 1){
+        alert("chaveamento \n 1°Partida:" + equipe1Chave5 + " vs " + equipe2Chave5 + "\n 2°Partida:" + equipe3Chave5 + "vs" + equipe4Chave5)
         alert(`Partida 1: ${equipe1Chave5} vs ${equipe2Chave5}`)
 
         let vencedor1Chave5 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
@@ -213,5 +227,132 @@ if (equipes === "3" || equipes === "3 equipes") {
                 }
             }
         }
-}
-}
+}else if(chave == 2){
+  alert("chaveamento \n 1°Partida:" + equipe1Chave5 + " vs " + equipe3Chave5 + "\n 2°Partida:" + equipe2Chave5 + "vs" + equipe4Chave5)
+        alert(`Partida 1: ${equipe1Chave5} vs ${equipe3Chave5}`)
+
+        let vencedor1Chave5 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+
+     if(vencedor1Chave5 != equipe1Chave5 && vencedor1Chave5 != equipe3Chave5){
+        alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+        }else{
+            alert(`Partida 2: ${equipe2Chave5} vs ${equipe4Chave5}`)
+
+            let vencedor2Chave5 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+
+            if(vencedor2Chave5 === equipe2Chave5 || vencedor2Chave5 === equipe4Chave5){
+                alert(`Semi final: ${vencedor1Chave5} vs ${equipe5Chave5}`)
+
+                let vencedorSemiChave5 = prompt("Digite o nome do vencedor da semi final:").toUpperCase()
+
+                if(vencedorSemiChave5 === vencedor1Chave5 || vencedorSemiChave5 === equipe5Chave5){
+                    alert(`Grande final: ${vencedorSemiChave5} vs ${vencedor2Chave5}`)
+
+                    let vencedorFinalChave5 = prompt("Digite o nome do vencedor da final:").toUpperCase()
+                    
+                    alert(`🏆 Parabéns, ${vencedorFinalChave5}! Vocês são os campeões do torneio!`) 
+
+                }else if (vencedorFinalChave5 != vencedorSemiChave5 && vencedorFinalChave5 != equipe5Chave5){
+                  alert("❌ Nome inválido! Essa equipe não participou da final.") 
+                }else{
+                    alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+                }
+            }
+        }
+}else if(chave == 3){
+  alert("chaveamento \n 1°Partida:" + equipe3Chave5 + " vs " + equipe2Chave5 + "\n 2°Partida:" + equipe5Chave5 + "vs" + equipe1Chave5)
+        alert(`Partida 1: ${equipe3Chave5} vs ${equipe2Chave5}`)
+
+        let vencedor1Chave5 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+
+     if(vencedor1Chave5 != equipe1Chave5 && vencedor1Chave5 != equipe2Chave5){
+        alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+        }else{
+            alert(`Partida 2: ${equipe5Chave5} vs ${equipe1Chave5}`)
+
+            let vencedor2Chave5 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+
+            if(vencedor2Chave5 === equipe5Chave5 || vencedor2Chave5 === equipe1Chave5){
+                alert(`Semi final: ${vencedor1Chave5} vs ${equipe4Chave5}`)
+
+                let vencedorSemiChave5 = prompt("Digite o nome do vencedor da semi final:").toUpperCase()
+
+                if(vencedorSemiChave5 === vencedor1Chave5 || vencedorSemiChave5 === equipe5Chave5){
+                    alert(`Grande final: ${vencedorSemiChave5} vs ${vencedor2Chave5}`)
+
+                    let vencedorFinalChave5 = prompt("Digite o nome do vencedor da final:").toUpperCase()
+                    
+                    alert(`🏆 Parabéns, ${vencedorFinalChave5}! Vocês são os campeões do torneio!`) 
+
+                }else if (vencedorFinalChave5 != vencedorSemiChave5 && vencedorFinalChave5 != equipe5Chave5){
+                  alert("❌ Nome inválido! Essa equipe não participou da final.") 
+                }else{
+                    alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+                }
+            }
+        }
+}else if(chave == 4){
+  alert("chaveamento \n 1°Partida:" + equipe5Chave5 + " vs " + equipe2Chave5 + "\n 2°Partida:" + equipe4Chave5 + "vs" + equipe1Chave5)
+        alert(`Partida 1: ${equipe5Chave5} vs ${equipe2Chave5}`)
+
+        let vencedor1Chave5 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+
+     if(vencedor1Chave5 != equipe5Chave5 && vencedor1Chave5 != equipe2Chave5){
+        alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+        }else{
+            alert(`Partida 2: ${equipe4Chave5} vs ${equipe1Chave5}`)
+
+            let vencedor2Chave5 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+
+            if(vencedor2Chave5 === equipe4Chave5 || vencedor2Chave5 === equipe1Chave5){
+                alert(`Semi final: ${vencedor1Chave5} vs ${equipe3Chave5}`)
+
+                let vencedorSemiChave5 = prompt("Digite o nome do vencedor da semi final:").toUpperCase()
+
+                if(vencedorSemiChave5 === vencedor1Chave5 || vencedorSemiChave5 === equipe5Chave5){
+                    alert(`Grande final: ${vencedorSemiChave5} vs ${vencedor2Chave5}`)
+
+                    let vencedorFinalChave5 = prompt("Digite o nome do vencedor da final:").toUpperCase()
+                    
+                    alert(`🏆 Parabéns, ${vencedorFinalChave5}! Vocês são os campeões do torneio!`) 
+
+                }else if (vencedorFinalChave5 != vencedorSemiChave5 && vencedorFinalChave5 != equipe5Chave5){
+                  alert("❌ Nome inválido! Essa equipe não participou da final.") 
+                }else{
+                    alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+                }
+            }
+        }
+}else if(chave == 5){
+  alert("chaveamento \n 1°Partida:" + equipe5Chave5 + " vs " + equipe2Chave5 + "\n 2°Partida:" + equipe4Chave5 + "vs" + equipe1Chave5)
+        alert(`Partida 1: ${equipe5Chave5} vs ${equipe2Chave5}`)
+
+        let vencedor1Chave5 = prompt("Digite o nome do vencedor da primeira partida:").toUpperCase()
+
+     if(vencedor1Chave5 != equipe5Chave5 && vencedor1Chave5 != equipe2Chave5){
+        alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+        }else{
+            alert(`Partida 2: ${equipe4Chave5} vs ${equipe1Chave5}`)
+
+            let vencedor2Chave5 = prompt("Digite o nome do vencedor da segunda partida:").toUpperCase()
+
+            if(vencedor2Chave5 === equipe4Chave5 || vencedor2Chave5 === equipe1Chave5){
+                alert(`Semi final: ${vencedor1Chave5} vs ${equipe3Chave5}`)
+
+                let vencedorSemiChave5 = prompt("Digite o nome do vencedor da semi final:").toUpperCase()
+
+                if(vencedorSemiChave5 === vencedor1Chave5 || vencedorSemiChave5 === equipe5Chave5){
+                    alert(`Grande final: ${vencedorSemiChave5} vs ${vencedor2Chave5}`)
+
+                    let vencedorFinalChave5 = prompt("Digite o nome do vencedor da final:").toUpperCase()
+                    
+                    alert(`🏆 Parabéns, ${vencedorFinalChave5}! Vocês são os campeões do torneio!`) 
+
+                }else if (vencedorFinalChave5 != vencedorSemiChave5 && vencedorFinalChave5 != equipe5Chave5){
+                  alert("❌ Nome inválido! Essa equipe não participou da final.") 
+                }else{
+                    alert("❌ Nome inválido! Essa equipe não participou da partida.") 
+                }
+            }
+        }
+}}
