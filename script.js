@@ -1142,7 +1142,7 @@ if (equipes === "3" || equipes === "3 equipes") {
             alert(`Semi final 1: ${vencedor1Chave8} vs ${vencedor2Chave8}`)
 
             let vencedorSemi1Chave8 = prompt("Digite o nome do vencedor da semi final 1:").toUpperCase()
-            if (vencedorSemi1Chave 8 === vencedor1Chave8 || vencedorSemi1Chave8 === vencedor2Chave8) {
+            if (vencedorSemi1Chave8 === vencedor1Chave8 || vencedorSemi1Chave8 === vencedor2Chave8) {
               alert(`Semi final 2: ${vencedor3Chave8} vs ${vencedor4Chave8}`)
 
               let vencedorSemi2Chave8 = prompt("Digite o nome do vencedor da semi final 2:").toUpperCase()
